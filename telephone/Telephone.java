@@ -65,7 +65,7 @@ public class Telephone {
 			System.out.print("Какой объем памяти у карты?");
 			int k=in.nextInt();
 			if (j == 1) {
-				if (card1.equals("no")==true) {
+				if (card1.compareTo("no")==0) {
 					memory1 += k;
 					current_state.setMemory(memory1);
 					system_t.setCard("yes");
@@ -74,7 +74,7 @@ public class Telephone {
 					System.out.println("Карта или уже находится в телефоне, или информация о ней неверна");
 			}
 			if (j == 2) {
-				if (card1.equals("yes")==true) {
+				if (card1.compareTo("yes")==0) {
 					memory1 -= k;
 					current_state.setMemory(memory1);
 					system_t.setCard("no");
