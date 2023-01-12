@@ -99,4 +99,14 @@ public class Telephone {
 			}
 		}
 	}
+	class Screen_percentage{
+		public int percent;
+	}
+	public void ratio(Screen_percentage phone){
+		int r1=screen.getWidth_s();
+		int r2=screen.getHeight_s();
+		int r3=dimensions.getWidth();
+		int r4=dimensions.getHeight();
+		phone.percent=(r1*r2*100)/(r3*r4);
+	}
 }
