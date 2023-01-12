@@ -13,13 +13,13 @@ public class System_t {
 	}
 	public System_t(String opersystem){
 		this.opersystem = opersystem;
-		this.internalm = 0;
-		this.card = "card";
+		internalm = 0;
+		card = "card";
 	}
 	public System_t(){
-		this.opersystem = "opersystem";
-		this.internalm = 0;
-		this.card = "card";
+		opersystem = "opersystem";
+		internalm = 0;
+		card = "card";
 	}
 	public void read(Scanner in){
 		System.out.println("Введем информацию о системе");

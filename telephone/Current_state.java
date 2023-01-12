@@ -13,13 +13,13 @@ public class Current_state {
 	}
 	public Current_state(int charge){
 		this.charge = charge;
-		this.memory = 0;
-		this.internet = "internet";
+		memory = 0;
+		internet = "internet";
 	}
 	public Current_state(){
-		this.charge = 0;
-		this.memory = 0;
-		this.internet = "internet";
+		charge = 0;
+		memory = 0;
+		internet = "internet";
 	}
 	public void read(Scanner in){
 		System.out.println("Введем информацию о нынешнем состоянии");

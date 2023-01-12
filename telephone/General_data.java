@@ -13,13 +13,13 @@ public class General_data {
 	}
 	public General_data(String model){
 		this.model = model;
-		this.country = "country";
-		this.year = 0;
+		country = "country";
+		year = 0;
 	}
 	public General_data(){
-		this.model="model";
-		this.country = "country";
-		this.year = 0;
+		model="model";
+		country = "country";
+		year = 0;
 	}
 	public void read(Scanner in){
 		System.out.println("Введем информацию об общих данных");

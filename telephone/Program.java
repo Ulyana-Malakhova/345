@@ -1,7 +1,7 @@
 package telephone;
 import telephone.Telephone;
 import java.util.Scanner;
-
+import java.util.*;
 public class Program {
 
 	public static void main(String[] args) {

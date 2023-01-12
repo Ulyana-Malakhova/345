@@ -15,15 +15,15 @@ public class Dimensions {
 	}
 	public Dimensions(int weight){
 		this.weight = weight;
-		this.thickness = 0;
-		this.height = 0;
-		this.width = 0;
+		thickness = 0;
+		height = 0;
+		width = 0;
 	}
 	public Dimensions(){
-		this.weight = 0;
-		this.thickness = 0;
-		this.height = 0;
-		this.width = 0;
+		weight = 0;
+		thickness = 0;
+		height = 0;
+		width = 0;
 	}
 	public void read(Scanner in){
 		System.out.println("Введем информацию о параметрах телефона");
@@ -42,5 +42,11 @@ public class Dimensions {
 		System.out.println("-высота:"+ height);
 		System.out.println("-толщина:"+ thickness);
 		System.out.println("-вес:"+ weight);
+	}
+	public int getWidth(){
+		return width;
+	}
+	public int getHeight(){
+		return height;
 	}
 }
