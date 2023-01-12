@@ -14,6 +14,7 @@ public class Program {
 		Telephone spisok = new Telephone(current_state, dimensions, system_t, screen, general_data);
 		spisok.read(in);
 		spisok.display();
+		Telephone.number_phone();
 		int ext = 0;
 		while (ext == 0) {
 			System.out.println("Выберите действие, которое хотите совершить:");
@@ -23,8 +24,10 @@ public class Program {
 			System.out.println("4.Ввод новых данных");
 			System.out.println("5.Выход");
 			int d=in.nextInt();
-			if (d == 1)
+			if (d == 1){
 				spisok.display();
+				Telephone.number_phone();
+			}
 			if (d == 2)
 			{
 				spisok.zaryad();
@@ -34,6 +37,7 @@ public class Program {
 			if (d == 4) {
 				spisok.read(in);
 				spisok.display();
+				Telephone.number_phone();
 			}
 			if (d == 5) {
 				System.out.print("Вы действительно хотите выйти? (1-Да,2-Нет):");

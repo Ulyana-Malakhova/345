@@ -7,24 +7,30 @@ import telephone.General_data;
 import java.util.Scanner;
 
 public class Telephone {
-	Current_state current_state;
-	Dimensions dimensions;
-	System_t system_t;
-	Screen screen;
-	General_data general_data;
+	private Current_state current_state;
+	private Dimensions dimensions;
+	private System_t system_t;
+	private Screen screen;
+	private General_data general_data;
+	static int number = 0;
 	Scanner in = new Scanner(System.in);
+	public static void number_phone(){
+		System.out.println("Количество телефонов - " + number);
+	}
 	public Telephone(Current_state current_state, Dimensions dimensions, System_t system_t, Screen screen, General_data general_data){
 		this.current_state = current_state;
 		this.dimensions = dimensions;
 		this.system_t = system_t;
 		this.screen = screen;
 		this.general_data = general_data;
+		number++;
 	}
 	public Telephone(Current_state current_state){
 		this.current_state = current_state;
+		number++;
 	}
 	public Telephone(){
-
+		number++;
 	}
 	public void read(Scanner in){
 		current_state.read(in);
