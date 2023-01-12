@@ -11,6 +11,21 @@ public class Program {
 		System_t system_t = new System_t("opersystem", 0, "card");
 		Screen screen = new Screen(0, "pixel");
 		General_data general_data = new General_data("country", "model", 0);
+		System.out.println("Хотите ввести информацию о массиве объектов? 1 -да, 2-нет");
+		int vv =in.nextInt();
+		if (vv == 1){
+			System.out.println("Работа с массивом объектов. Введите информацию о 2 телефонах");
+			ArrayList<Telephone> spisok1 = new ArrayList<>();
+			int i;
+			for (i=0;i<2;i++){
+				spisok1.add(new Telephone(current_state, dimensions, system_t, screen, general_data));
+				spisok1.get(i).read(in);
+				spisok1.get(i).display();
+			}
+			Telephone.number_phone();
+			spisok1.clear();
+		}
+		System.out.println("Введите данные об объекте с которым будете работать");
 		Telephone spisok = new Telephone(current_state, dimensions, system_t, screen, general_data);
 		spisok.read(in);
 		spisok.display();
